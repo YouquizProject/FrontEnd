@@ -4,7 +4,7 @@ import MyPageForm from "../../../component/MyPageForm";
 import { useTable } from "react-table";
 
 const TableBlock = styled.div`
-height: 75vh;
+height: 65vh;
 width: 54.5vw;
 display: flex;
 flex-direction: column;

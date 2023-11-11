@@ -81,7 +81,9 @@ const QuestionPage = () => {
             <h3>{questions[currentQuestion].question}</h3>
             {questions[currentQuestion].exampleList.length > 0 ? (
             <h6>
+              <img className="icon" src={"/youtube-user.png"} width={30} alt="" />
               @{questions[currentQuestion].writer}
+              <span className="date"> 1일전</span>
               <span>
                 <br />
                 {questions[currentQuestion].comment}

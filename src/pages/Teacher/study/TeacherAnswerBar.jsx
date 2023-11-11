@@ -8,7 +8,6 @@ const TableWrapper = styled.div`
 const STable = styled.div`
 width: 100%;
 height: 100%;
-overflow-y: auto;
 
 &::-webkit-scrollbar {
   width: .7vw;

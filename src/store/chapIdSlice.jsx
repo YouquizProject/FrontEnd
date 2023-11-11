@@ -1,4 +1,3 @@
-// chapIdSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 export const chapIdSlice = createSlice({
