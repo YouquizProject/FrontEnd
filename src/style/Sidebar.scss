@@ -1,0 +1,65 @@
+$grey:#747474;
+$green:#19A05E;
+
+.nav-wrapper {
+	width: 7vw;
+	height: 100vh;
+	position : fixed;
+	overflow: auto;
+	flex-direction: row;
+	float: left;
+	background-color: $green;
+}
+.nav-container {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0; /* 추가 */
+	margin: 0; /* 추가 */
+	
+	.Ylogo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 5vh 0;
+		.logo{
+			display: flex;
+		}
+	}
+	.nav-item {
+		width: 100%;
+		height: 15vh;
+		color: white;
+
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+		a{
+			display: flex;
+			flex-direction: column;
+			font-size: 1vw;
+			line-height: 1.5vh;
+			font-weight: 500;
+			color: inherit;
+			text-decoration: none;
+			align-items: center;
+		}
+		.icon{
+			width: 3vw;
+			height: auto;
+			padding-bottom: 1.2vh;
+		}
+	}
+	.current-page {
+		/* 각 페이지에 들어갔을 때 적용할 스타일 */
+		background-color: white; 
+		a{
+			color: #19A05E;
+		}
+	}
+}
+
+
+

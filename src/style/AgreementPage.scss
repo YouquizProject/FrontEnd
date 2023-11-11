@@ -1,0 +1,35 @@
+.agree-wrapper{
+	position: absolute;
+	width: 880px;
+	height: 440px;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	.allcheck {
+		padding-left: 1.5vw;
+		color: #4E4E4E;
+		font-weight: 400;
+		font-size: 25px;
+		margin: 2px 0px;
+	}
+	button {
+		position: absolute;
+		bottom: 0;
+		transform: translateX(-50%);
+		left: 50%;
+		
+		width: 357px;
+		height: 76px;
+
+
+		background: #19A05E;
+		border-radius: 5px;
+
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: center;
+
+		color: #FFFFFF;
+	}
+}

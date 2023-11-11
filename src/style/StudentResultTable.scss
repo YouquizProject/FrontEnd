@@ -1,0 +1,32 @@
+.tablebar{
+	width: 100%;
+	height: 100%;
+	table {
+		width: 100%;
+		height: 100%;
+		border-spacing: 0;
+		background-color: white;
+		text-align: center;
+	}
+
+	thead {
+		tr {
+			border-bottom: 2px solid #adadad;
+			background-color: #f0f0f0;
+		}
+	}
+	tbody {
+		tr:nth-child(2) {
+			background-color: #f0f0f0;
+		}
+		td:nth-child(3){
+			text-align: left;
+		}
+	}
+	td, th {
+		min-width: 1vw;
+		padding: 0.5vw;
+		margin: 0;
+	}
+
+}

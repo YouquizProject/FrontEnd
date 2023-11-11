@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Sidebar from "./component/Sidebar";
 import HomePage from "./pages/Common/HomePage";
 import Header from "./component/Header";
-import { RegisterRoute, QuestionRoute, TeacherStudyRoute, ResultRoute } from "./Router/Route";
+import { RegisterRoute, QuestionRoute, TeacherStudyRoute, ResultRoute } from "./Route";
 import EvaluationData from "./pages/Teacher/my/EvaluationData";
 import StudyData from "./pages/Teacher/my/StudyData";
 import LoginPage from "./pages/Common/LoginPage";
@@ -34,7 +34,7 @@ const App = () => {
       return "Quiz";
     }
   }
-
+  
   return (
     <>
       {!hideSidebarAndHeader && (
@@ -54,7 +54,6 @@ const App = () => {
         <Route path="/teacher/my/evaluationstatus" element={<EvaluationData />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
-      
     </>
   );
 };

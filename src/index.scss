@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter';
+	color:#747474;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+* {
+	box-sizing: inherit;
+}
+button {
+	border: none;
+	font-size: 1vw;
+	font-weight: bold;
+	padding: 0.25vw 1vw;
+	outline: none;
+	cursor: pointer;
+}

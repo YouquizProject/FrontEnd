@@ -1,0 +1,89 @@
+.complate-container{
+	height: 25vh;
+	width: 23vw;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15vh;
+	img {
+		animation: fadein 2s;
+		-moz-animation: fadein 2s; /* Firefox */
+		-webkit-animation: fadein 2s; /* Safari and Chrome */
+		-o-animation: fadein 2s; /* Opera */
+	}
+	@keyframes fadein {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+	}
+	@-moz-keyframes fadein { /* Firefox */
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+	}
+	@-webkit-keyframes fadein { /* Safari and Chrome */
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+	}
+	h1{
+		font-weight: 800;
+	}
+	p{
+		color:gray;
+	}
+}
+.button{
+	margin-top: 8vh;
+	display: flex;
+	justify-content: space-between;
+	button{
+		font-size: 1.2rem;
+		width: 10vw;
+		height: 7vh;
+		border-radius: 1.4rem;
+		background-color: #19A05e;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		transition: all 0.3s ease;
+		color:white;
+	}
+	:hover {
+		background-color: white;
+		color: #19A05e;
+	}
+	:hover:after {
+		left: auto;
+		right: 0;
+		width: 100%;
+	}
+	:active {
+		top:2px;
+	}
+	.homebtn{
+		background-color: white;
+		color: #19A05e;
+	}
+	.homebtn:hover {
+		color: white;
+		background-color: #19A05e;
+	}
+	.homebtn:hover:after {
+		left: auto;
+		right: 0;
+		width: 100%;
+	}
+	.homebtn:active {
+		top:2px;
+	}
+}
+
+
+
