@@ -9,7 +9,7 @@ import { registerSlice } from "./registerSlice";
 import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
 import thunk from "redux-thunk";
-import storage from "redux-persist/lib/storage";
+import storageSession from "redux-persist/lib/storage/session";
 
 const reducers = combineReducers({
   auth: authSlice.reducer,
@@ -22,7 +22,7 @@ const reducers = combineReducers({
   
 const persistConfig = {
   key: "root",
-  storage,
+  storage: storageSession,
 };
 const persistedReducer = persistReducer(persistConfig, reducers);
 
