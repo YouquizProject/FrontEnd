@@ -45,7 +45,7 @@ export const RegisterFetchThunk = (role, id, password, username, birth, sex, pho
 		}));
 
 		const request = async () => {
-			const response = await fetch(`http://52.79.181.56:8080/register/${role}`, {
+			const response = await fetch(`http://spring.youquiz.site:8080/register/${role}`, {
 				method : "POST",
 				headers:{
 					"Content-Type" : "application/json"

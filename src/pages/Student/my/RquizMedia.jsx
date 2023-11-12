@@ -46,7 +46,7 @@ export default function RquizMedia() {
       const Data = async () => {
         try {
           const response = await axios.get(
-            `http://52.79.181.56:8080/${role}/${id}/studystatus/${chap_id}`,
+            `http://spring.youquiz.site:8080/${role}/${id}/studystatus/${chap_id}`,
           );
           setQuestions(response.data);
 

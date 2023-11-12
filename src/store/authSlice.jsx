@@ -34,7 +34,7 @@ export const AuthFetchThunk = (role, id, pw) => {
 		}));
 
 		const request = async () => {
-			const response = await fetch(`http://52.79.181.56:8080/login/${role}`, {
+			const response = await fetch(`http://spring.youquiz.site:8080/login/${role}`, {
 				method : "POST",
 				headers:{
 					"Content-Type" : "application/json"

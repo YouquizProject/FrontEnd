@@ -123,7 +123,7 @@ const TeacherAnswerBar = () => {
     const StudentData = async () => {
       try {
         const response = await axios.get(
-          `http://52.79.181.56:8080/teacher/${id}/study/1/${chap_id}`
+          `http://spring.youquiz.site:8080/teacher/${id}/study/1/${chap_id}`
         );
         setData(response.data.answer_sentence_list);
         setAnswer(response.data.commentEntityList);
@@ -162,7 +162,7 @@ if (!data) {
     setReplyingStudentId(null);
     try {
       // 서버로 수정된 답변을 보냄
-      await axios.post(`http://52.79.181.56:8080/teacher/${id}/study/${chap_id}/${studentId}/comment`, {
+      await axios.post(`http://spring.youquiz.site:8080/teacher/${id}/study/${chap_id}/${studentId}/comment`, {
         comment: comment,
       });
     } catch (error) {

@@ -15,7 +15,7 @@ export default function EvaluationData() {
       const Data = async () => {
       try {
         const response = await axios.get(
-          `http://52.79.181.56:8080/teacher/${id}/evaluationstatus`
+          `http://spring.youquiz.site:8080/teacher/${id}/evaluationstatus`
         );
           setLists(response.data.evaluation_status[0]);
         } catch (e) {

@@ -11,7 +11,7 @@ export default function StudyData() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://52.79.181.56:8080/teacher/${id}/studystatus`
+          `http://spring.youquiz.site:8080/teacher/${id}/studystatus`
         );
         setLists(response.data.student_list[0]);
       } catch (e) {

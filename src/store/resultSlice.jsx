@@ -23,7 +23,7 @@ export const ResultFetchThunk = ( id ) => {
 		}));
 
 		const request = async () => {
-			const response = await fetch(`http://52.79.181.56:8080/student/${id}/studystatus`);
+			const response = await fetch(`http://spring.youquiz.site:8080/student/${id}/studystatus`);
 			if(!response.ok) throw new Error("Failed!");
 			//console.log("response" + response.json());
 			return response.json();

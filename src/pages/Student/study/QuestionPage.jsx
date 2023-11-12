@@ -51,7 +51,7 @@ const QuestionPage = () => {
     const answerSentence = openEndedAnswer;
     console.log(answerList, answerSentence);
   
-    fetch(`http://52.79.181.56:8080/student/${id}/study/${chap_id}`, {
+    fetch(`http://spring.youquiz.site:8080/student/${id}/study/${chap_id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

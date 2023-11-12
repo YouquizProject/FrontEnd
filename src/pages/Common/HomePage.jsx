@@ -14,10 +14,7 @@ const HomePage = () => {
 	return (
 		<>
 			<div className="home-wrapper">
-				<Link to="/">
-					<img className="logo" src="title-logo.png" alt="logo"/>
-				</Link>
-				<div className="firts-page">
+				<div className="first-page">
 					<div className="title-img">
 						<img className="fir"src="ellipse.png" alt="pic"/>
 					</div>
