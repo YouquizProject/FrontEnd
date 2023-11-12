@@ -7,33 +7,34 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 
 const Contents = styled.div`
-  background-color: light-gray;
-  height: 55vh;
-  width: 65vw;
-  display: flex;
-  flex-direction: column;
-  margin: 0 20vw;
-  font-size: 1.4vw;
-  .youtube {
-  }
-  img {
-    margin-right: 0.5vw;
-  }
+display: flex;
+height: 55vh;
+width: 55vw;
+flex-direction: column;
+margin-left: 20vw;
+font-size: 1.3vw;
+.youtube {
+  width: 100%;
+  height: 100%;
+}
+img {
+  margin-right: 0.5vw;
+}
 `;
 const Btn = styled.div`
-  margin-left: 80.9vw;
+margin-left: 80.9vw;
 `;
 
 
 const YoutubeVideo = ({ videoId }) => {
   const opts = {
-    height: "490",
-    width: "940",
+    width: '100%',
+    height: '100%',
     playerVars: {
       autoplay: 0,
     },
   };
-  return <YouTube videoId={videoId} opts={opts} />;
+  return <YouTube videoId={videoId} opts={opts} style={{width: '100%', height: '100%'}}/>;
 };
 
 export default function QuizMedia() {

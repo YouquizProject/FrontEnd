@@ -7,14 +7,15 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 
 const Contents = styled.div`
-  background-color: light-gray;
-  height: 55vh;
-  width: 65vw;
   display: flex;
+  height: 55vh;
+  width: 55vw;
   flex-direction: column;
-  margin: 0 20vw;
-  font-size: 1.5rem;
+  margin-left: 20vw;
+  font-size: 1.3vw;
   .youtube {
+    width: 100%;
+    height: 100%;
   }
   img {
     margin-right: 0.5vw;
@@ -26,15 +27,15 @@ const Btn = styled.div`
 
 const YoutubeVideo = ({ videoId }) => {
   const opts = {
-    height: "490",
-    width: "940",
+    width: '100%',
+    height: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
     },
   };
 
-  return <YouTube videoId={videoId} opts={opts} />;
+  return <YouTube videoId={videoId} opts={opts} style={{width: '100%', height: '100%'}}/>;
 };
 export default function RquizMedia() {
   const [questions, setQuestions] = useState(null);

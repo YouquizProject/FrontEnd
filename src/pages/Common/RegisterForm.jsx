@@ -122,26 +122,43 @@ const RegisterForm = ({ type, form, onChange, onSubmit }) => {
 
 	const validatePassword = () => {
 			// 현재 ref 값으로 비밀번호 일치 여부를 검사합니다.
-			if (pwconfirmRef.current.value && pwRef.current.value !== pwconfirmRef.current.value) {
-					setError('비밀번호가 일치하지 않습니다.');
-			} else {
-					setError(null);
-			}
+		if (pwconfirmRef.current.value && pwRef.current.value !== pwconfirmRef.current.value) {
+				setError('비밀번호가 일치하지 않습니다.');
+		} else {
+				setError(null);
+		}
 	};
 
 	const onClickHandler = (e) => {
-			e.preventDefault();
-			if (pwRef.current.value !== pwconfirmRef.current.value) {
-					setError('비밀번호가 일치하지 않습니다.');
-					pwRef.current.focus(); // 사용자가 다시 입력할 수 있도록 비밀번호 입력란에 포커스
-			} else {
-					console.log("btnclicked");
-					console.log(btnActive);
-					console.log(sexActive);
-					setError(null);
-					dispatch(RegisterFetchThunk(btnActive, idRef.current.value, pwRef.current.value, nameRef.current.value, birthRef.current.value, sexActive, phoneRef.current.value));
-					navigate('/login');
+		e.preventDefault();
+		const requiredFields = [
+			{ ref: idRef, name: "아이디" },
+			{ ref: pwRef, name: "비밀번호" },
+			{ ref: pwconfirmRef, name: "비밀번호 확인" },
+			{ ref: nameRef, name: "이름" },
+			{ ref: birthRef, name: "생년월일" },
+			{ ref: phoneRef, name: "휴대전화번호" },
+		];
+	
+		for (let field of requiredFields) {
+			if (field.ref.current.value === "") {
+				alert(`${field.name}을(를) 입력해주세요.`);
+				field.ref.current.focus();
+				return; // 함수를 종료하여 더 이상 진행하지 않음
 			}
+		}
+		if (pwRef.current.value !== pwconfirmRef.current.value) {
+				setError('비밀번호가 일치하지 않습니다.');
+				pwRef.current.focus();
+				return; // 사용자가 다시 입력할 수 있도록 비밀번호 입력란에 포커스
+		}
+
+		console.log("btnclicked");
+		console.log(btnActive);
+		console.log(sexActive);
+		setError(null);
+		dispatch(RegisterFetchThunk(btnActive, idRef.current.value, pwRef.current.value, nameRef.current.value, birthRef.current.value, sexActive, phoneRef.current.value));
+		navigate('/login');
 	}
 	return (
 		<>

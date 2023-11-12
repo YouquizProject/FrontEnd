@@ -10,7 +10,7 @@ const Questionwrapper = styled.div`
 
  .problem {
   width: 70%;
-  font-size:1.8vw;
+  font-size:1.5vw;
   font-weight:600;
   margin: 1.5vw;
   margin-left:10vw;

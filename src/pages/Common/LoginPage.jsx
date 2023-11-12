@@ -8,19 +8,21 @@ const LoginPage = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 
-	const { role }= useSelector((state)=>state.auth);
+	const { role, status }= useSelector((state)=>state.auth);
 	const [btnActive, setBtnActive] = useState('student');
 	const [idRef, pwRef] = [useRef(), useRef()];
 
 	const onClickHandler = (e) => {
 		console.log(btnActive);
 		dispatch(AuthFetchThunk(btnActive, idRef.current.value, pwRef.current.value));
-		
 		if (idRef.current.value === "") {
 			alert("아이디를 입력해주세요.");
 		}
 		if (pwRef.current.value === "") {
 			alert("비밀번호를 입력해주세요.");
+		}
+		if (idRef.current.value && pwRef.current.value && status === 'failed') {
+			alert("아이디 혹은 비밀번호가 맞지 않습니다.")
 		}
 	}
 	useEffect(() => {
