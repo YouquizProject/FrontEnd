@@ -1,4 +1,4 @@
-/* 홈 */
+
 $dark-green:#105A31;
 $green:#19A05E;
 
@@ -8,15 +8,15 @@ p {
 }
 .home-wrapper{
 	position: relative;
-	width: 1440px;
+	max-width: 1024px;
 	max-height: 3232px;
 	margin: 0 auto;
 }
 
 .logo{
-	position: absolute;
-	left: 40px;
-	top: 32px;
+	position: fixed;
+	left: 300px;
+	top:30px;
 }
 .image {
 	animation: fadein 2s;
@@ -61,10 +61,8 @@ p {
 	position: absolute;
 	width: 600px;
 	height: 292px;
-	left: 203px;
 	top: 118px;
-	
-text-transform: uppercase;
+	text-transform: uppercase;
 	p{
 		position: absolute;
 		left: 0px;
@@ -83,7 +81,7 @@ text-transform: uppercase;
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		font-family: 'Righteous';
+		font-family:'Righteous', sans-serif;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 5.635rem;
@@ -151,9 +149,10 @@ text-transform: uppercase;
 
 .title-img{
 	position: absolute;
+	top: 0px;
+	left: 25px;
 	width: 1130.18px;
 	height: 1164.7px;
-	left:231.82px;
 }
 
 .line{
@@ -161,24 +160,18 @@ text-transform: uppercase;
 }
 .home-first{
 	position: absolute;
-	width: 1193.12px;
-	height: 681.56px;
-	left: 68px;
 	top: 828px;
 	.image {
 		position: absolute;
-		width: 804.12px;
-		height: 681.56px;
-		left: -4.375rem;
-		top: -3.75rem;
-		z-index: 1;
+		left: -220px;
+		top: -60px;
 	}
 	.text {
 		position: absolute;
 		width: 562px;
-		height: 361px;
-		left: 626px;
-		top: 111px;
+		height: 379px;
+		left: 480px;
+		top: 120px;
 		.head{
 			position: absolute;
 			box-sizing: border-box;
@@ -207,18 +200,18 @@ text-transform: uppercase;
 			letter-spacing: 0.07em;
 			font-family: 'NanumSquare';
 			font-weight: bolder;
+			letter-spacing: 0.07em;
 
 			color: #2D3E34;
 		}
 		p {
 			font-style: normal;
-			font-size: 1.25rem;
-			line-height: 1.7rem;
+			font-size: 20px;
+			line-height: 27px;
 			text-align: right;
 			letter-spacing: 0.07em;
-
 			color: #2D3E34;
-			padding: 1.4rem 0rem;
+			padding: 22px 0px;
 		}
 		button {
 			position: absolute;
@@ -254,13 +247,10 @@ text-transform: uppercase;
 	position: absolute;
 	width: 1059.94px;
 	height: 664px;
-	left: 239px;
 	top: 1569px;
 	.text{
 		position: absolute;
-		width: 442px;
-		height: 384px;
-		left: 0px;
+		left: 30px;
 		top: 155px;
 		.head{
 			position: absolute;
@@ -341,30 +331,23 @@ text-transform: uppercase;
 	}
 	.image {
 		position: absolute;
-		width: 589.94px;
-		height: 660.01px;
-		left: 360px;
+		left: 390px;
 		top: -80px;
 	}
 }
 .home-third{
 	position: absolute;
-	width: 1204px;
-	height: 532px;
-	left: 131px;
 	top: 2434px;
 	.image {
 		position: absolute;
-		width: 635.24px;
-		height: 532px;
-		left: -120px;
+		left: -200px;
 		top: -120px;
 	}
 	.text {
 		position: absolute;
 		width: 480px;
 		height: 379px;
-		left: 700px;
+		left: 600px;
 		top: 123px;
 
 		.head{
@@ -415,11 +398,7 @@ footer{
 	width: 100%;
 	height: 77px;
 	left: 0px;
-	top:3155px;
-	img {
-		position: absolute;
-		left:622px;
-		top:7px;
-	}
+	top: 3155px;
+	text-align: center;
 }
 

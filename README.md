@@ -15,6 +15,8 @@
 
 ![amazonaws](https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
+### API 명세서 노션페이지
+<a href="https://www.notion.so/API-1e699ca81d11435a86296438df798b39?pvs=4"><img src="https://img.shields.io/badge/Notion-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"></a>
 ---
 ## 프로젝트 소개
 유튜브 영상과 그에 달린 실제 댓글을 기반으로 만든 문제들을 풀이하며 디지털 문해력을 기를 수 있도록 하는 공공 교육서비스입니다.
@@ -31,7 +33,7 @@
 <br>
 
 ## 활용된 기술
-1. `react-youtube` 사용
+### `react-youtube` 사용
 ```JavaScript
 const YoutubeVideo = ({ videoId }) => {
   const opts = {
@@ -46,7 +48,10 @@ const YoutubeVideo = ({ videoId }) => {
 ```
 <br>
 
-2. `Redux-toolkit`으로 상태 관리<br>
+### `Redux-toolkit`으로 상태 관리
+-_로그인 시 user의 type(student, teacher)과 id 등 정보를 저장_<br>
+-_각 user에 적합한 정보 할당_<br>
+-_각 퀴즈 챕터의 데이터를 불러오기_<br>
 
 >store.jsx
 ```JavaScript
@@ -80,4 +85,5 @@ import { store } from "./store/store";
 ...
 </Provider>
 ```
+
 

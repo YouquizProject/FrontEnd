@@ -5,6 +5,7 @@ import { RegisterFetchThunk } from "../../store/registerSlice";
 import styled from "styled-components";
 
 const RegisterWrapper = styled.div`
+font-family: "Noto Sans KR", sans-serif;
 .register-wrapper{
 	width: 80%;
 	margin: auto;
@@ -45,9 +46,9 @@ const RegisterWrapper = styled.div`
 	display: flex;
 	width: 100%;
 	border: 3px solid #9E9E9E;
-	margin: .5vh;
+	margin: .5vh 0;
 	gap: 1.2vw;
-	padding: .5vh 1.6vw;
+	padding: .7vh 1.6vw;
 	border-radius: .3rem;
 	color: #828282;
 	font-size: .95vw;
@@ -89,7 +90,7 @@ const RegisterWrapper = styled.div`
 	width:100%;
 	border: 3px solid #9E9E9E;
 	text-weight: 500;
-	margin: .5vh;
+	margin: .5vh 0;
 }
 .btn2 {
 	display: flex;
@@ -108,7 +109,7 @@ const RegisterWrapper = styled.div`
 	color: white;
 
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 1.5vw;
 }
 `;
 const RegisterForm = ({ type, form, onChange, onSubmit }) => {
@@ -180,7 +181,7 @@ const RegisterForm = ({ type, form, onChange, onSubmit }) => {
 				</div>
 					<div className="btn2">
 							<button className="back" onClick={() => navigate(-1)}>이전</button>
-							<button onClick={onClickHandler}>다음</button>
+							<button onClick={onClickHandler}>완료</button>
 					</div>
 				</div>
 			</RegisterWrapper>

@@ -1,15 +1,16 @@
 .agree-wrapper{
+	font-family: "Noto Sans KR", sans-serif;
 	position: absolute;
 	width: 880px;
-	height: 440px;
+	height: 50vh;
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	.allcheck {
 		padding-left: 1.5vw;
 		color: #4E4E4E;
-		font-weight: 400;
-		font-size: 25px;
+		font-weight: 500;
+		font-size: 1vw;
 		margin: 2px 0px;
 	}
 	button {
@@ -18,16 +19,15 @@
 		transform: translateX(-50%);
 		left: 50%;
 		
-		width: 357px;
-		height: 76px;
-
+		width: 18vw;
+		height: 8vh;
 
 		background: #19A05E;
 		border-radius: 5px;
 
 		font-weight: 400;
-		font-size: 30px;
-		line-height: 36px;
+		font-size: 1.5vw;
+		line-height: 1.8vw;
 		text-align: center;
 
 		color: #FFFFFF;
